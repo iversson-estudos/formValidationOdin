@@ -7,7 +7,7 @@ function mainView() {
 
       <div>
         <label>Whats your email?</label>
-        <input maxlenght="10" name="email" type="email"></input>
+        <input required type="email" name="email"></input>
       </div>
         <div><label>Country of Residence</label>
         <input name="country"></input>
@@ -24,7 +24,7 @@ function mainView() {
         <label>Repeat your password</label>
         <input name="password" type="password"></input>
       </div>
-        <button id="submit">REGISTER</button>
+        <button type="submit">REGISTER</button>
    </form>
   `;
 

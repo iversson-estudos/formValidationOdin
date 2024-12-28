@@ -144,8 +144,11 @@ form {
     flex-direction: column;
     gap: 2px;
 
+    input {
+      outline-style: none;
+    }
     input.error {
-      border: 4px blue solid;
+      border: 2px solid red;
     }
   }
   button {
