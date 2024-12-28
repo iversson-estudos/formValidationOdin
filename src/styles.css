@@ -127,3 +127,28 @@ table {
   border-spacing: 0;
 }
 /*END OF CSS RESET*/
+
+form {
+  margin-top: 33vh;
+  margin-left: 33vw;
+  display: inline-block;
+
+  > * {
+    margin-top: 16px;
+  }
+  h1 {
+    font-weight: 600;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+    input.error {
+      border: 4px blue solid;
+    }
+  }
+  button {
+    font-size: 16px;
+  }
+}
