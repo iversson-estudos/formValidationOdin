@@ -2,14 +2,18 @@ function addEventsInputs() {
   const email = document.querySelector('[name="email"]');
   if (email) {
     email.addEventListener("input", () => {
-      if (!email.checkValidity()) {
+      email.setCustomValidity("");
+      if (!email.validity.valid) {
         email.classList.add("error");
+        email.setCustomValidity(
+          "Email must be in the format example@gmail.com",
+        );
       } else {
         email.classList.remove("error");
       }
+      email.reportValidity();
     });
   }
-  email.reportValidity();
 }
 
 export { addEventsInputs };
