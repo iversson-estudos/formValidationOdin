@@ -147,8 +147,9 @@ form {
     input {
       outline-style: none;
     }
-    input.error {
-      border: 3px solid red;
+    input.error:focus {
+      outline: 2px solid red;
+      border: 2px solid rgba(255, 100, 100, 0.8);
     }
   }
   button {
