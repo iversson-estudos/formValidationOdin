@@ -147,7 +147,7 @@ form {
     input {
       outline-style: none;
     }
-    input.error:focus {
+    input.error {
       outline: 2px solid red;
       border: 2px solid rgba(255, 100, 100, 0.8);
     }
@@ -155,4 +155,10 @@ form {
   button {
     font-size: 16px;
   }
+}
+.sucess {
+  margin-top: 33vh;
+  margin-left: 33vw;
+  display: inline-block;
+  font-size: 64px;
 }

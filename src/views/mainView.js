@@ -10,21 +10,21 @@ function mainView() {
         <input required type="email" name="email"></input>
       </div>
         <div><label>Country of Residence</label>
-        <input name="country"></input>
+        <input required maxlength="56" name="country"></input>
       </div>
       <div>
         <label>Whats your ZIP CODE?</label>
-        <input name="zip" type="zip"></input>
+        <input maxlength="9"name="zip" type="zip" pattern="\\d{5}-\\d{3}"></input>
       </div>
       <div>
         <label>Provide a password</label>
-        <input name="password" type="password"></input>
+        <input name="password" type="password" minlength="10"></input>
       </div>
       <div>
         <label>Repeat your password</label>
-        <input name="password" type="password"></input>
+        <input name="rePassword" type="password"></input>
       </div>
-        <button type="submit">REGISTER</button>
+        <button name="submit" type="submit">REGISTER</button>
    </form>
   `;
 
